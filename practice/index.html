@@ -1,0 +1,27 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>quiz game</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="page active" id="start-page">
+        <h1>welcome to quiz-game.</h1>
+        <button id="start-btn">start quiz</button>
+      </div>
+      <div class="page" id="quiz-page">
+        <div class="question" id="question-text"></div>
+        <div class="choices" id="choice-container"></div>
+      </div>
+      <div class="page" id="result-page">
+        <div class="result">
+          you scored <span id="score"></span>out of <span id="max-score"></span>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
