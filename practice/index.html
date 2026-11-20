@@ -2,22 +2,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="style.css" />
     <title>quiz game</title>
   </head>
   <body>
     <div class="container">
       <div class="page active" id="start-page">
-        <h1>welcome to quiz-game.</h1>
-        <button id="start-btn">start quiz</button>
+        <div class="welcome">
+          <h1>welcome to quiz-game.</h1>
+          <button class="start-btn" id="start-btn">start</button>
+        </div>
       </div>
+
       <div class="page" id="quiz-page">
         <div class="question" id="question-text"></div>
         <div class="choices" id="choice-container"></div>
       </div>
       <div class="page" id="result-page">
-        <div class="result">
-          you scored <span id="score"></span>out of <span id="max-score"></span>
+        <div class="result-box">
+          <div class="message" id="message"></div>
+          <div class="result">
+            you scored <span id="score"></span>out of
+            <span id="max-score"></span>
+          </div>
+          <button class="restart-btn" id="restart-btn">restart</button>
         </div>
       </div>
     </div>
